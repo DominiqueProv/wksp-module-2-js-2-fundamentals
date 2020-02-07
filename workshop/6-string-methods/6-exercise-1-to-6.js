@@ -13,8 +13,6 @@ const rickSaying = 'wubba lubba dub dub';
 const grandson = 'Morty Antoine Smith';
 const enemies = "Tammy Gueterman, Evil Morty, Zeep Xanflorp, Galactic Federation, Council of Ricks, Phoenixperson, Scary Terry, Abradolf Lincler, Supernova";
 const alternateRicks = 'Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137';
-const secret = "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!";
-const notCode = ['summer', 'bacon', 'scary', 'intergalactic', 'jerry', 'morty', 'beth', 'family'];
 
 
 
@@ -60,13 +58,18 @@ console.log(newName);
 // Q5
 // Decode and console. the secret!
 // To do so, you will need to remove all of the notCode words.
+const secret = "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!";
+const notCode = ['summer', 'bacon', 'scary', 'intergalactic', 'jerry', 'morty', 'beth', 'family'];
 
 
-for ( let i = 0 ; i < notCode.lenght; i++ ){
-    decode = decode.replace(notcode[i], '');
+for ( let i = 0 ; i < notCode.length; i++ ){
+    
+ let solution = secret.replace(notCode[i],'');
+      console.log('lol ' + solution);
+
+    
 }
 
-console.log(decode);
 
 
 
