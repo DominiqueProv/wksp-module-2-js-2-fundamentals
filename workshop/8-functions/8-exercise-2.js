@@ -6,14 +6,21 @@
 // https://www.w3schools.com/jsreF/jsref_obj_math.asp
 
 
+function max(num1, num2) {
+    
+    return Math.max(num1,num2);
+}
 
+console.log(max(32,45));
 
 
 // Q2b
 // Without changing the function at all, 
 // can you figure out how we could use it to determine the greater number between 4 integers?
 
+console.log(max(max(45,69),max(45,21)))
 
 
 // Q2c
 // Would this work with more integers? 
+

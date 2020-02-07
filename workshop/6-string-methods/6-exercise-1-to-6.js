@@ -13,41 +13,69 @@ const rickSaying = 'wubba lubba dub dub';
 const grandson = 'Morty Antoine Smith';
 const enemies = "Tammy Gueterman, Evil Morty, Zeep Xanflorp, Galactic Federation, Council of Ricks, Phoenixperson, Scary Terry, Abradolf Lincler, Supernova";
 const alternateRicks = 'Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137';
-const secret = "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!";
-const notCode = ['summer', 'bacon', 'scary', 'intergalactic', 'jerry', 'morty', 'beth', 'family'];
+
+
+
+
 
 
 // Q1
 // How many names does Morty have? (use grandson)
+
+// const num = grandson.split(" ").length;
+// console.log(num);
 
 
 
 // Q2
 // Convert the alternateRicks string to an array. Console that array.
 
-
+const myArray = alternateRicks.split();
+console.log(myArray);
 
 // Q3
 // How many Ricks have been named in alternateRicks?
 
 
+const number = alternateRicks.split(" ").length;
+console.log(number);
 
 // Q4
 // How many characters are there in rickSaying (without spaces)? 
 
+const answer = rickSaying.replace(/ /g,"");
+console.log(answer.length);
 
 
 // Q4
 // Morty doesn't actually have a middle name. Console Morty's name without "Antoine".
 
 
+const newName = grandson.replace(' Antoine','');
+console.log(newName);
+
 
 // Q5
 // Decode and console. the secret!
 // To do so, you will need to remove all of the notCode words.
+const secret = "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!";
+const notCode = ['summer', 'bacon', 'scary', 'intergalactic', 'jerry', 'morty', 'beth', 'family'];
+
+
+for ( let i = 0 ; i < notCode.length; i++ ){
+    
+ let solution = secret.replace(notCode[i],'');
+      console.log('lol ' + solution);
+
+    
+}
+
+
 
 
 
 // Q6 (challenge)
 // Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
 
+const list = enemies.replace(' Scary Terry,','');
+console.log(list);

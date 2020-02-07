@@ -8,7 +8,12 @@
 // For example: greet(["bob", "eric"]) returns ["Hello bob", "Hello eric"]
 
 function greet(lst) {
-    // lst is an array of strings
+const addWord = lst.map(function(word){
+    return ('Hello ' + word);
+})
+
+return addWord;
+
 
 }
 // -------------------------------------------------------------------------
